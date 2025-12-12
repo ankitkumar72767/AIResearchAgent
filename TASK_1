@@ -1,0 +1,107 @@
+OpenDeepResearcher is an AI-powered autonomous research assistant designed to explore complex topics deeply and efficiently. It works like a skilled human researcher—planning, searching, analyzing, and generating structured reports. The system uses large language models (LLMs), agentic workflows, and web search APIs to gather credible information and synthesize multi-perspective insights automatically.
+
+Objective
+
+The aim is to create a research tool that:
+
+Breaks down queries into researchable components
+
+Retrieves accurate, real-time information
+
+Analyzes and summarizes content using an LLM
+
+Produces high-quality research reports efficiently
+
+Maintains research continuity with session memory
+
+Research Workflow
+
+Planning – A Planner Agent converts the main query into sub-questions and a roadmap.
+
+Information Retrieval – A Searcher Agent uses online search APIs (like Tavily) to gather reliable data.
+
+Synthesis – A Writer Agent uses an LLM to analyze information and generate clear summaries.
+
+Report Generation – The system compiles findings into a structured, organized research document.
+
+Session Memory (Optional) – Past research threads are saved for continuity across sessions.
+
+System Components
+
+Planner Agent: Creates the research plan.
+
+Searcher Agent: Retrieves updated online content.
+
+Writer Agent: Produces structured, coherent summaries.
+
+Memory System: Stores ongoing research sessions.
+
+Execution Graph (LangGraph): Manages agent flow and task sequencing.
+
+Model Interface: Connects to local or hosted LLMs (Qwen2.5-7B, LM Studio, Ollama, etc.).
+
+Tech Stack Overview
+Language
+
+Python – Core development language.
+
+Frameworks & Libraries
+
+LangGraph – Multi-agent workflow execution.
+
+LangChain – LLM integration, memory, and tools.
+
+LLM & Search
+
+LM Studio / Ollama / API – Local LLM hosting.
+
+Qwen2.5-7B-Instruct – Main instruction-tuned model for planning & writing.
+
+Tavily API – Real-time web search for research data.
+
+Environment
+
+Python 3.10+, venv, pip
+
+Git for version control
+
+MemorySaver for session tracking
+
+Project Timeline (8 Weeks / 4 Milestones)
+Milestone 1 (Weeks 1–2): Foundation Setup
+
+Environment setup, dependencies installation
+
+Architecture design and agent roles
+
+Configure local LLM + Tavily
+
+Outcome: Basic draft flow works
+
+Milestone 2 (Weeks 3–4): Core Agent Development
+
+Implement Planner, Searcher, and Writer agents
+
+Build full pipeline with LangGraph
+
+Outcome: End-to-end research loop functioning
+
+Milestone 3 (Weeks 5–6): UI + Memory Integration
+
+Build chat-style interface
+
+Connect UI to backend pipeline
+
+Add session memory and thread tracking
+
+Outcome: Interactive and persistent research sessions
+
+Milestone 4 (Weeks 7–8): Refinement + Final Output
+
+Improve prompts, agent coordination
+
+Add structured report formatting and citations
+
+Performance optimization
+
+Outcome: Complete polished system + demo-ready documentation
